@@ -3,7 +3,7 @@
     position: relative;
     width: 100vw; /* عرض الشاشة بالكامل */
     height: 100vh; /* ارتفاع الشاشة بالكامل */
-    background-image: url('/images/hom.jpg'); /* تأكد من المسار الصحيح للصورة */
+    background-image: url('../images/hom.jpg'); /* تأكد من المسار الصحيح للصورة */
     background-position: center; /* توسيط الصورة */
     background-repeat: no-repeat; /* منع تكرار الصورة */
     background-size: cover; /* جعل الصورة تغطي العنصر بالكامل */
