@@ -1,0 +1,173 @@
+/* تنسيق الصورة العلوية */
+.top-img {
+    position: relative;
+    width: 100vw; /* عرض الشاشة بالكامل */
+    height: 100vh; /* ارتفاع الشاشة بالكامل */
+    background-image: url('/images/hom.jpg'); /* تأكد من المسار الصحيح للصورة */
+    background-position: center; /* توسيط الصورة */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    background-size: cover; /* جعل الصورة تغطي العنصر بالكامل */
+    background-attachment: fixed; /* تثبيت الصورة عند التمرير */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.text-overlay {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.job-offer {
+    background: hsl(192, 76%, 43%);
+    padding: 70px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-header h2 {
+    color: #d8e1ec;
+    font-size: 44px;
+}
+
+.job-header p {
+    font-size: 25px;
+    margin: 10px 10px 10px;
+}
+
+.job-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.job-details, .job-requirements {
+    background: rgb(228, 230, 231);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.job-details h3, .job-requirements h3 {
+    font-size: 27px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 25px;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: '✔';
+    color: #28a745;
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+/* تنسيق معلومات الاتصال */
+.contact-info {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 25px;
+}
+
+.contact-info a {
+    color: #160bdf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* استعلامات الميديا لشاشات الجوال */
+@media (max-width: 768px) {
+    /* تقليل الحجم في العناصر الكبيرة */
+    .job-offer {
+        padding: 50px;
+    }
+
+    .job-header h2 {
+        font-size: 30px; /* تقليل حجم العنوان */
+    }
+
+    .job-header p {
+        font-size: 20px; /* تقليل حجم النص الفرعي */
+    }
+
+    .job-content {
+        flex-direction: column;
+        gap: 20px; /* تقليل المسافة بين العناصر */
+    }
+
+    .job-details, .job-requirements {
+        padding: 20px;
+    }
+
+    .job-details h3, .job-requirements h3 {
+        font-size: 22px; /* تقليل حجم العناوين */
+    }
+
+    ul li {
+        font-size: 18px; /* تقليل حجم النصوص في القائمة */
+    }
+
+    .contact-info {
+        font-size: 20px; /* تقليل حجم النص في معلومات الاتصال */
+    }
+}
+
+/* استعلامات الميديا للشاشات الصغيرة جدا */
+@media (max-width: 480px) {
+    /* تقليل الحجم بشكل أكبر */
+    .job-offer {
+        padding: 30px;
+    }
+
+    .job-header h2 {
+        font-size: 24px; /* تقليل حجم العنوان أكثر */
+    }
+
+    .job-header p {
+        font-size: 18px; /* تقليل حجم النص الفرعي أكثر */
+    }
+
+    .job-content {
+        gap: 10px; /* تقليل المسافة بين العناصر بشكل أكبر */
+    }
+
+    .job-details, .job-requirements {
+        padding: 15px;
+    }
+
+    .job-details h3, .job-requirements h3 {
+        font-size: 20px; /* تقليل حجم العناوين بشكل أكبر */
+    }
+
+    ul li {
+        font-size: 16px; /* تقليل حجم النصوص في القائمة أكثر */
+    }
+
+    .contact-info {
+        font-size: 18px; /* تقليل حجم النص في معلومات الاتصال بشكل أكبر */
+    }
+}

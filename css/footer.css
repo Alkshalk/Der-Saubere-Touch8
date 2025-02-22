@@ -1,0 +1,90 @@
+.footer-widgets {
+    background-color: hsl(192, 76%, 43%);
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    color: #fff;
+}
+
+footer {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: hsl(192, 76%, 43%);
+}
+
+.tv-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tv-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tv-col-lg-3 {
+    width: 25%;
+    padding: 1px;
+}
+
+.widget {
+    border-radius: 8px;
+    text-align: center;
+}
+
+.textwidget p {
+    margin: 1%; /* تقليل المسافة بين الفقرات */
+    font-size: 35px;
+    color: #cecaca;
+    font-weight: bold;
+    line-height: 3.3rem; /* تقليل تباعد الأسطر */
+}
+
+.textwidget a {
+    display: inline-block; /* منع جعل الرابط يأخذ سطرًا كاملاً */
+    margin-top: 1rem; /* تقليل المسافة بين البريد والرقم */
+    color: blue;
+    line-height: 2.3rem;
+}
+
+@media (max-width: 992px) {
+    .tv-col-lg-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tv-col-md-6 {
+        width: 100%;
+    }
+    .tv-col-lg-3 {
+        width: 100%;
+    }
+}
+
+/* تحسينات للأجهزة الصغيرة */
+@media (max-width: 600px) {
+    .footer-widgets {
+        font-size: 35px; /* تقليل حجم الخط في الفوتر للأجهزة الصغيرة */
+    }
+    footer {
+        padding: 3rem 1rem; /* تقليل الحشوة في الفوتر */
+    }
+    .tv-container {
+        width: 100%; /* جعل الحاوية تأخذ العرض الكامل */
+    }
+    .tv-row {
+        justify-content: center; /* توسيط العناصر في الصف */
+    }
+    .tv-col-lg-3 {
+        width: 100%; /* عرض العمود كاملاً في الشاشات الصغيرة */
+    }
+    .textwidget p {
+        font-size: 20px; /* تقليل حجم الخط في الفقرات للأجهزة الصغيرة */
+        line-height: 2rem; /* تقليل تباعد الأسطر */
+    }
+    .textwidget a {
+        font-size: 16px; /* تقليل حجم الخط في الروابط */
+    }
+}

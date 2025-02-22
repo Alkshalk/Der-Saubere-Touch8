@@ -1,0 +1,248 @@
+div.top-img {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/hom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 1000px) {
+    div.top-img {
+        background-position: left;
+    }
+}
+
+section.content {
+    font-size: 2vw;
+    position: relative;
+    padding: 2vw 3vw;
+    top: 55%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+}
+
+section.content .lifestyle {
+    text-transform: uppercase;
+    color: hsl(60, 7%, 3%);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+section.content .Ihr {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: hsl(192, 76%, 43%);
+}
+
+section.content .Reinigungsservice {
+    color: hwb(0 0% 100%);
+    font-size: 1.9rem;
+    margin-block: 1rem;
+    font-weight: bold;
+}
+
+section.content .Sorgfalt {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+section.content .Sorgfalt span {
+    color: hsl(192, 76%, 43%);
+    font-size: 2vw;
+}
+
+section.content button {
+    background-color: hsl(192, 76%, 43%);
+    color: rgb(234, 233, 232);
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    padding: 1.5rem 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    section.content {
+        font-size: 3rem;
+    }
+}
+
+main h1.unsere {
+    margin: 1rem 1rem 1rem 2rem;
+    color: #bcdfda;
+    font-weight: bold;
+    background-color: hsl(192, 76%, 43%);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -2px,
+                rgba(0, 0, 0, 0.15) 0px 6px 10px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 0.3rem;
+    margin: auto;
+    gap: 1px;
+}
+
+@media (max-width: 600px) {
+    main h1.unsere {
+        margin: 2.3rem 0 2rem 0;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    section.content {
+        font-size: 0.9rem;
+        margin-left: 5%;
+        top: 45%;
+    }
+
+    .lifestyle, .Ihr, .Reinigungsservice, .Sorgfalt {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+main .section.Products.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 55px 55px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+article.card {
+    flex: 1 1 calc(33.333% - 3rem);
+    max-width: 800px;
+    min-height: 500px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -2px,
+                rgba(0, 0, 0, 0.15) 0px 6px 10px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    background-color: hsl(192, 76%, 43%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2rem;
+    margin: auto;
+    padding: 1rem 1rem 68rem;
+    gap: 10px;
+}
+
+article.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.2) 0px 8px 14px 0px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px -10px;
+    border-radius: 40px;
+    display: block;
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+.card .content {
+    padding: 10px 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card .content .title {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1px 1px;
+    word-wrap: break-word;
+    background-color: hsl(192, 76%, 43%);
+    width: auto;
+    margin: auto;
+}
+
+.card .content .description {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #232b2e;
+    line-height: 1.5rem;
+    word-spacing: 0.1rem;
+    text-align: left;
+    margin: auto;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    background-color: hsl(192, 76%, 43%);
+    border-radius: 10px;
+}
+
+.fa-solid {
+    color: #122427;
+}
+
+@media (max-width: 1024px) {
+    article.card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    article.card {
+        flex: 1 1 100%;
+    }
+}
+
+.Products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* التعديل الجديد للمقياس على الشاشات الصغيرة */
+@media (max-width: 480px) {
+    section.content {
+        font-size: 4vw; /* زيادة حجم الخط قليلاً */
+    }
+    .lifestyle, .Ihr, .Reinigungsservice, .Sorgfalt {
+        font-size: 1.5rem; /* تقليل حجم الخط ليتناسب أكثر مع الشاشة الصغيرة */
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+    }
+
+    /* جعل وصف البطاقة يظهر بشكل أفضل */
+    .card .content .description {
+        font-size: 1rem; /* تصغير الخط ليتناسب مع الشاشة الصغيرة */
+        padding: 8px 8px;
+    }
+}

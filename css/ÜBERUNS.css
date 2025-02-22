@@ -1,0 +1,133 @@
+/* تحديد الصورة كخلفية */
+.image-section {
+    position: relative;
+    background-image: url('../images/hom.jpg'); /* تأكد من المسار الصحيح للصورة */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 2500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* تنسيق النص العائم */
+.text-overlay {  
+    position: absolute;
+    top: 10%;
+    bottom: 10%; /* تحديد المسافة من أسفل الصفحة */
+    left: 50%; /* محاذاة النص في المنتصف أفقيًا */
+    transform: translateX(-50%); /* محاذاة النص تمامًا */
+    color: #f1f1f1; /* لون نص فاتح */
+    font-size: 3.5rem; /* حجم النص متوسط */
+    font-family: 'Verdana', sans-serif; /* استخدام خط مختلف */
+    text-align: center; /* محاذاة النص إلى الوسط */
+    z-index: 1;
+    padding: 20px 30px; /* إضافة حشو داخلي للنص */
+    background: rgba(0, 0, 0, 0.7); /* خلفية داكنة للنص */
+    border-radius: 15px; /* حواف دائرية للنص */
+    max-width: 85%; /* تحديد أقصى عرض للنص */
+    box-sizing: border-box; /* ضمان أن الحشو لا يؤثر على العرض */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* إضافة ظل للنص */
+}
+
+/* تغيير تنسيق العنوان */
+.text-overlay h2 {
+    margin-bottom: 20px;
+    color: #00bcd4; /* لون مميز للعنوان */
+    font-size: 5rem; /* تكبير حجم العنوان */
+    font-family: 'Georgia', serif; /* استخدام خط مختلف للعنوان */
+    text-transform: uppercase; /* تحويل العنوان إلى حروف كبيرة */
+    letter-spacing: 0px; /* إضافة تباعد بين الحروف */
+}
+
+/* تعديل النصوص الفرعية */
+.text-overlay p, .text-overlay ul {
+    font-size: 1.8rem; /* تحديد حجم النصوص الفرعية */
+    line-height: 1.5; /* تحسين التباعد بين الأسطر */
+    color: #b0bec5; /* لون فاتح للنصوص الفرعية */
+    margin-top: 10px;
+}
+
+.text-overlay ul {
+    text-align: left; /* محاذاة النصوص ضمن قائمة إلى اليسار */
+    margin-top: 20px;
+}
+
+/* التعديل على المقياس لشاشات الجوال */
+@media (max-width: 768px) {
+    /* تقليل حجم النص في .text-overlay */
+    .text-overlay {
+        font-size: 2.5rem; /* تقليل الحجم قليلاً على الشاشات الصغيرة */
+        padding: 15px 20px; /* تقليل الحشو */
+        max-width: 90%; /* توسيع النص ليأخذ عرض أكبر على الجوال */
+    }
+
+    /* تغيير حجم العنوان */
+    .text-overlay h2 {
+        font-size: 3.5rem; /* تقليل حجم العنوان */
+    }
+
+    /* تقليل حجم النصوص الفرعية */
+    .text-overlay p, .text-overlay ul {
+        font-size: 1.5rem; /* تقليل حجم النصوص الفرعية */
+    }
+
+    /* تقليل حجم النصوص في التذييل */
+    footer {
+        font-size: 0.9rem; /* تقليل حجم الخط في التذييل على الجوال */
+    }
+
+    /* تقليل ارتفاع الصورة */
+    .image-section {
+        height: 2500px; /* تقليل ارتفاع الصورة على الجوال */
+    }
+}
+
+/* تعديل النصوص بشكل أكبر للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 2rem; /* تقليل الحجم أكثر */
+        padding: 10px 15px; /* تقليل الحشو */
+    }
+
+    .text-overlay h2 {
+        font-size: 2.8rem; /* تقليل حجم العنوان */
+    }
+
+    .text-overlay p, .text-overlay ul {
+        font-size: 1.3rem; /* تقليل حجم النصوص الفرعية */
+    }
+
+    footer {
+        font-size: 0.8rem; /* تقليل حجم الخط في التذييل */
+    }
+
+    /* تقليل ارتفاع الصورة بشكل أكبر */
+    .image-section {
+        height: 2000px; /* تقليل ارتفاع الصورة أكثر على الشاشات الصغيرة */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    min-height: 125vh; 
+    padding-bottom: 70px;  
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1px; /* إضافة حشو داخل التذييل */
+    position: fixed; /* يثبت التذييل في أسفل الصفحة */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* تأكد من أن التذييل يملأ عرض الشاشة بالكامل */
+    background-color: hsl(192, 76%, 43%); /* خلفية داكنة للتذييل */
+    font-size: 1rem; /* زيادة حجم الخط في التذييل */
+    z-index: 1000; /* تأكد من أن التذييل يظهر فوق باقي المحتوى */
+    box-sizing: border-box; /* تأكد أن الحشو لا يؤثر على عرض التذييل */
+}

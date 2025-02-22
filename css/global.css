@@ -1,0 +1,136 @@
+:root {
+    ---bodyBG: #f6f6f6;
+    ---bodyfont: #2b3445;
+    ---blue: #9fc5ef;
+    ---blue-button: #9fc5ef;
+    ---icons: #2b2b2b;
+    --footer: #070606;
+    ---white: #fff;
+    --button: red;
+    --blaubutton: #0363f3;
+    --white: #fff;
+}
+
+body {
+    background-color: var(---bodyBG);
+    color: var(---bodyfont);
+}
+
+.border {
+    border: 4px solid red;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+html {
+    font-family: system-ui, -apple-system, 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    width: 600px;
+    padding: 100px;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #2b3445;
+    box-shadow: inset 002.5px 2px hsla(0, 50%, 1%, 0.5);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html {
+    scrollbar-color: #9e4673 #3d4a59;
+}
+
+main {
+    width: 100%;
+    margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 80%;
+    }
+
+    h1 {
+        width: 100%; /* تعديل العرض ليكون 100% للشاشات الصغيرة */
+        padding: 50px; /* تقليل الحشوة في الشاشات الصغيرة */
+    }
+}
+
+a,
+button {
+    all: unset;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+button:active,
+a:active {
+    scale: 0.9;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    width: 600px;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+/* استجابة لشاشات الجوال */
+@media (max-width: 600px) {
+    html {
+        font-size: 14px; /* تقليل حجم الخط ليظهر بشكل مناسب على شاشات الجوال */
+    }
+    body {
+        font-size: 1rem; /* تقليل حجم الخط في النصوص */
+    }
+    h1 {
+        width: 100%;
+        padding: 50px;
+    }
+    .border {
+        border: 2px solid red; /* تقليل سماكة الحدود على الشاشات الصغيرة */
+    }
+    .flex {
+        flex-direction: column; /* تغيير ترتيب العناصر ليصبح عمودي */
+        align-items: center;
+    }
+}
